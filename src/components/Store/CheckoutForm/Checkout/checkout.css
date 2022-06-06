@@ -1,0 +1,114 @@
+.loader-container{
+    align-self: center;
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: 1
+}
+
+.loader {
+    display: inline-block;
+    margin: 5% 0;
+    text-align: center;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #898989;
+    background: transparent;
+    width: 16px;
+    height: 16px;
+    -webkit-animation: spin .75s linear infinite; /* Safari */
+    animation: spin .75s linear infinite;
+    align-self: center;
+  }
+
+.redirect-container{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFFE0;
+    z-index: 10;
+    padding: auto;
+    margin: auto;
+    flex: 1;
+}
+
+.redirect{
+    flex: 1;
+    margin-top: 25vh;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 4rem;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 2px 2px 10px 2px #33333322;
+    max-width: max-content;
+}
+
+.redirect-a{
+    align-self: center;
+    max-width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    color:#2255AA;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+.redirect-a:hover{
+    color:#2299FF;
+}
+
+.redirect-options{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    }
+
+  .option{
+    background: white;
+    color: #269;
+    border: 1px solid #269;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.5rem 0.8rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.option:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 2px #22222244;
+    color: white;
+    background: #269;
+}
+
+.checkout-order-reference{
+    color:#2299FF;
+    font-weight: bold;
+}
+
+.checkout-order-reference:hover{
+    color:#2299FF;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:1000px){
+    .redirect-a{
+        white-space:normal;
+
+    }
+
+    .redirect{
+        flex: 1;
+        min-width: 80%;
+    }
+}

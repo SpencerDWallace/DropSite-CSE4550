@@ -1,0 +1,181 @@
+.droppers__navbar {
+    min-height: 60px;
+    /* height: 10vh; */
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 1rem;
+    padding: 2rem 5%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.droppers__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    flex-shrink: 2;
+}
+
+
+.droppers__navbar-links_logo {
+    width: fit-content;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.droppers__navbar-links_logo img {
+    width: 4rem;
+    /* height: 34px; */
+}
+
+.droppers__navbar-links_container {
+    display: flex;
+    flex-direction:row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex: 1;
+    gap: 0.5rem;
+    height: 100%;
+    flex-wrap:wrap;
+}
+
+.droppers__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction:row;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.droppers__navbar-links_container button,
+.droppers__navbar-sign p,
+.droppers__navbar-menu_container p {
+    font-size: 1em;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    cursor: pointer;  
+}
+
+.droppers__navbar-links_container button
+{
+    height: 100%;
+    flex: 2;
+    background: #00000000;
+    border-radius: 4px;
+    border-width: 0;
+    padding: 0.5rem 0.7rem;
+}
+
+.droppers__navbar-links_container button:hover
+{
+    background: #269;
+    box-shadow: 3px 3px 20px 3px #92b3a955;
+    color: white;
+}
+
+.droppers__navbar-sign button,
+.droppers__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color:rgb(36, 41, 43);
+    background: white;
+    font-family: var(--font-family);
+    font-weight: 600;    
+    line-height: 1rem;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor:pointer;
+    font-size: 1em;
+}
+
+.droppers__navbar-sign button:hover,
+.droppers__navbar-menu_container button:hover 
+{
+    background: #269;
+    box-shadow: 3px 3px 20px 3px #92b3a955;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .droppers__navbar-sign button,
+    .droppers__navbar-menu_container button {
+       padding: 0.2rem 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .droppers__navbar {
+        gap: 4rem;
+        font-size: 18px;
+    }
+}
+
+.searchbar-container{
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #134;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    position: relative;
+  }
+
+  .searchbar-container .searchbar{
+    max-width: 100%;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0px;
+  }
+
+.searchbar-item
+{
+    max-width: 100%;
+    min-width: 100%;
+    background: white;
+    z-index: 10;
+}
+
+.searchbar-item-link{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar-item:hover
+{
+    cursor: pointer;
+}
+
+.searchbar-item h5{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+.searchbar-item-thumbnail{
+    position: relative;
+    max-width: 25%;
+    aspect-ratio: 2.5/1;
+    object-fit: contain;
+}

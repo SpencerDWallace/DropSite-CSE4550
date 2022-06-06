@@ -1,0 +1,54 @@
+.options{
+    padding: 3rem 0;
+    display: flex;
+    gap:1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    align-self: center;
+    flex: 1;
+}
+
+.option{
+    width: 100%;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* .option{
+    background: white;
+    color: #224499;
+    border: 1px solid #224499;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.5rem 0.8rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.option:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 2px #22222244;
+    color: white;
+    background: #224499;
+} */
+
+.orders-container{
+    flex:1;
+}
+
+@media only screen and (max-width:1000px){
+    .landing-container{
+        max-width: 80%;
+    }
+}
+
+
